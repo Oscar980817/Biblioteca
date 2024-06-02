@@ -7,6 +7,7 @@
   <link rel="shortcut icon" href="./assets/logo libro.png" type="image/x-icon">
   <!-- Para poder usar los iconos: -->
   <script src="https://kit.fontawesome.com/75ceeed09b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
   <title>Biblioteca</title>
 </head>
 
@@ -15,15 +16,15 @@
     <h1 class="header_title">Bienvenido a biblioteca Oscar Aguirre</h1>
   </header>
   <main>
-    <h2 class="nav_title">Vamos a encontrar un libro para ti:</h2>
+    <h2 class="title">Vamos a encontrar un libro para ti</h2>
     <form class="form" action="#">
       <label class="form_label" for="gender">Selecciona el genero:</label>
       <select class="form_select" name="gender" id="gender">
         <option value="selection" selected disabled>Selecciona</option>
         <option value="Terror">Terror</option>
         <option value="Drama">Drama</option>
-        <option value="Romantic">Romantico</option>
-        <option value="Police">Policiaco</option>
+        <option value="Deportes">Deportes</option>
+        <option value="Accion">Accion</option>
       </select>
       <label class="form_label" for="isbn">ISBN:</label>
       <input minlength="13" maxlength="13" type="number" name="isbn" id="isbn">
@@ -31,19 +32,96 @@
       <input type="text" name="title" id="title">
       <label class="form_label" for="author">Autor:</label>
       <input type="text" name="author" id="author">
-      <label class="form_label" for="physical">Fisico</label>
-      <input type="radio" name="physical-virutal" id="physical">
-      <label class="form_label" for="virtual">Virtual</label>
-      <input type="radio" name="physical-virutal" id="virtual">
+      <div>
+        <label class="form_label" for="physical">Fisico</label>
+        <input type="radio" name="physical-virutal" id="physical">
+        <label class="form_label" for="virtual">Virtual</label>
+        <input type="radio" name="physical-virutal" id="virtual">
+      </div>
+      <input class="input_submit" type="submit" value="Buscar">
     </form>
     <section class="section_books">
       <article class="section_books_book">
-        <h2>Titulo del libro</h2>
+        <h2>Solo Leveling</h2>
         <figure>
           <img src="https://images.cdn2.buscalibre.com/fit-in/360x360/d0/5a/d05ae5d78c2342a97eccecd0277c9f76.jpg"
             alt="img_libro">
           <div class="capa">
-            <p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi mollitia eum quos fugiat.</p></p>
+            <p>En un mundo en el que ciertos humanos llamados «cazadores» poseen habilidades mágicas, estos deben luchar contra monstruos para proteger a la raza humana de una aniquilación segura. Un cazador muy débil llamado Sung Jinwoo se encuentra en una lucha en la que solo puede tratar de sobrevivir. </p>
+            <p>Autor: Chu-Gong</p>
+            <p>Fecha de edicion: 22/05/2024</p>
+            <p>Cantidad de ejemplares: 100</p>
+            <p>Cantidad de ejemplares disponiles: 2</p>
+          </div>
+        </figure>
+      </article>
+      <article class="section_books_book">
+        <h2>Hajimeno ippo</h2>
+        <figure>
+          <img src="https://i.pinimg.com/736x/21/4e/cf/214ecf982b479fcb10787d886f43d8b5.jpg"
+            alt="img_libro">
+          <div class="capa">
+            <p>Ippo es un estudiante de secundaria que trabaja a tiempo completo en el negocio de su madre. Debido a esto, es molestado por los chicos de su escuela, es aquí donde su vida cambia drásticamente, cuando un boxeador profesional se cruza en su camino y lo introduce en el mundo del boxeo. </p>
+            <p>Autor: Jyoji Morikawa</p>
+            <p>Fecha de edicion: 22/05/2024</p>
+            <p>Cantidad de ejemplares: 100</p>
+            <p>Cantidad de ejemplares disponiles: 2</p>
+          </div>
+        </figure>
+      </article>
+      <article class="section_books_book">
+        <h2>Hunter x Hunter</h2>
+        <figure>
+          <img src="https://i.pinimg.com/474x/99/1b/a0/991ba05095c8de2f0468c71b1cdc36d2.jpg"
+            alt="img_libro">
+          <div class="capa">
+            <p>Gon quiere seguir los pasos de su padre y convertirse en un hunter, un cazador, personajes con sorprendentes poderes que recorren el mundo viviendo aventuras, librando batallas, capturando criminales y buscando tesoros o ciudades perdidas </p>
+            <p>Autor: Yoshihiro Togashi</p>
+            <p>Fecha de edicion: 22/05/2024</p>
+            <p>Cantidad de ejemplares: 100</p>
+            <p>Cantidad de ejemplares disponiles: 2</p>
+          </div>
+        </figure>
+      </article>
+      <article class="section_books_book">
+        <h2>Blue lock</h2>
+        <figure>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb_W-9eZj3B4QaEPmi--9GhGu0lH_f_8Bkqg&s"
+            alt="img_libro">
+          <div class="capa">
+            <p>Jugadores de fútbol de secundaria seleccionados de todo Japón que son invitados a participar de Blue Lock, un programa experimental de entrenamiento ideado por el extravagante y excéntrico Ego Jinpachi, diseñado para crear al próximo mejor goleador del mundo que llevará al país a ganar un Mundial. </p>
+            <p>Autor: Muneyuki Kaneshiro </p>
+            <p>Fecha de edicion: 22/05/2024</p>
+            <p>Cantidad de ejemplares: 100</p>
+            <p>Cantidad de ejemplares disponiles: 2</p>
+          </div>
+        </figure>
+      </article>
+      <article class="section_books_book">
+        <h2>One piece</h2>
+        <figure>
+          <img src="https://pbs.twimg.com/media/GGzbp_NX0AA23Qy.jpg:large"
+            alt="img_libro">
+          <div class="capa">
+            <p>One Piece narra la historia de un joven llamado Monkey D. Luffy, que inspirado por su amigo pirata Shanks, comienza un viaje para alcanzar su sueño, ser el Rey de los piratas, para lo cual deberá encontrar el tesoro One Piece dejado por el anterior rey de los piratas Gol D. Roger.</p>
+            <p>Autor: Eiichirō Oda.</p>
+            <p>Fecha de edicion: 22/05/2024</p>
+            <p>Cantidad de ejemplares: 100</p>
+            <p>Cantidad de ejemplares disponiles: 2</p>
+          </div>
+        </figure>
+      </article>
+      <article class="section_books_book">
+        <h2>Mieruko-chan</h2>
+        <figure>
+          <img src="https://cdn.alfabetajuega.com/alfabetajuega/2023/06/miko-es-una-chica-que-tiene-la-habilidad-de-ver-fantasmas-pero-intenta-ignorarlos-aunque-no-siempre-sera-posible.jpg?width=1200"
+            alt="img_libro">
+          <div class="capa">
+            <p>una adolescente corriente y que quiere vivir una vida normal, pero tiene una particularidad y es que es capaz de ver espíritus de gente muerta. Sin embargo, ella intenta ignorarlos, pues teme que si estos descubren de su habilidad, podrían acosarla con mayor intensidad.</p>
+            <p>Autor: Tomoki Izumi</p>
+            <p>Fecha de edicion: 22/05/2024</p>
+            <p>Cantidad de ejemplares: 100</p>
+            <p>Cantidad de ejemplares disponiles: 2</p>
           </div>
         </figure>
       </article>
@@ -51,5 +129,4 @@
   </main>
 
 </body>
-
 </html>

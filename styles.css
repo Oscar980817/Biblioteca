@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+}
+
+h1 {
+  margin: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000000;
+}
+
+.title {
+  margin: 8px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  background-color: #000000;
+}
+
+.form_label {
+  margin: 0 8px 0 8px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+select {
+  color: #000000;
+  font-size: 16px;
+}
+
+option {
+  color: #000000;
+  font-size: 16px;
+}
+
+.form input {
+  border-radius: 4px;
+  color: #000000;
+  font-size: 16px;
+}
+
+.input_submit {
+  height: 40px;
+  width: 100px;
+  border-radius: 4px;
+  margin-left: 4px;
+}
+
+.input_submit:hover {
+  background: rgba(97, 106, 107, 0.8);
+  transition: all 100ms ease-out;
+}
+
+.form div {
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section_books {
+  background-color: #0E0E0E;
+  margin-top: 20px;
+  padding: 20px 120px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  justify-items: center;
+  align-items: center;
+}
+
+.section_books_book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.section_books_book h2 {
+  margin-bottom: 10px;
+}
+
+.section_books_book figure {
+  position: relative;
+  height: 400px;
+  width: 250px;
+  overflow: hidden;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.section_books_book figure img {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out;
+}
+
+.section_books_book figure .capa {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(97, 106, 107, 0.8);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+
+.section_books_book figure:hover>.capa {
+  opacity: 1;
+  visibility: visible;
+}
+
+.section_books_book figure .capa p {
+  color: #fff;
+  margin-top: 20px;
+  transition: all 500ms ease-out;
+}
+
+@media (max-width: 1350px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form_label {
+    margin: 8px 8px 8px 8px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .section_books {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+    justify-content: center;
+  }
+}
